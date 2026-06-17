@@ -1,0 +1,282 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #f0e9e9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+/* Navbar */
+
+.navbar {
+    width: 94%;
+    padding: 25px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-logo img {
+    width: 200px;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #313528;
+    text-transform: uppercase;
+}
+
+.navbar ul li::after {
+    content: '';
+    height: 2px;
+    width: 100%;
+    background: #361f02;
+    position: absolute;
+    left: 0;
+    bottom: -1.5px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after {
+    width: 0;
+}
+
+/* Dashboard */
+
+.iframe-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border: none;
+}
+
+.iframe-wrapper iframe {
+    position: absolute;
+    top: -10%;
+    left: 0;
+    width: 100%;
+    height: 115%;
+}
+
+/* About Page */
+
+.awareness {
+    width: 100%;
+    text-align: center;
+    color: #000;
+}
+
+.awareness h1 {
+    color: #313528;
+}
+
+.description {
+    margin: 20px;
+    font-size: 18px;
+    color: #666;
+    padding-left: 3%;
+    padding-right: 3%;
+    text-align: center;
+}
+
+.awareness p {
+    margin: 20px;
+    margin-top: 20px;
+    font-size: 20px;
+    text-align: justify;
+}
+
+section {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.creator {
+    text-align: center;
+    margin: 11px;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 200px;
+}
+
+.creator img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.social-icon img {
+    width: 20px;
+    height: 20px;
+    border-radius: 10%;
+}
+
+/* Homepage Hero */
+
+.hero {
+    margin-top: -90px;
+    height: calc(100vh - 70px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px;
+}
+
+.hero-content {
+    max-width: 700px;
+}
+
+.hero-content h1 {
+    font-size: 3em;
+    color: #313528;
+    margin-bottom: 40px;
+    text-align: left;
+}
+
+.btn-primary {
+    padding: 12px 24px;
+    background-color: #c97c7c;
+    color: #6a2e35;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #6a2e35;
+    color: white;
+}
+
+/* Dashboard Chatbot */
+
+.chat-btn {
+position: fixed;
+bottom: 20px;
+right: 20px;
+background: #6a2e35;
+color: white;
+padding: 12px 18px;
+border-radius: 50px;
+cursor: pointer;
+font-size: 16px;
+border: none;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+z-index: 999;
+display: flex;
+align-items: center;
+gap: 8px;
+}
+
+.chatbox {
+display: none;
+position: fixed;
+bottom: 80px;
+right: 20px;
+width: 320px;
+background: white;
+border-radius: 10px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+overflow: hidden;
+flex-direction: column;
+z-index: 1000;
+}
+
+.chat-header {
+background: #6a2e35;
+color: white;
+padding: 12px;
+text-align: center;
+font-weight: bold;
+}
+
+.chat-body {
+padding: 10px;
+height: 300px;
+overflow-y: auto;
+display: flex;
+flex-direction: column;
+}
+
+.message {
+margin: 8px 0;
+padding: 8px 12px;
+border-radius: 8px;
+max-width: 80%;
+word-wrap: break-word;
+}
+
+.bot-message {
+background: #f1f1f1;
+align-self: flex-start;
+}
+
+.user-message {
+background: #6a2e35;
+color: white;
+align-self: flex-end;
+}
+
+.chat-footer {
+display: flex;
+border-top: 1px solid #ddd;
+}
+
+.chat-footer input {
+flex: 1;
+border: none;
+padding: 10px;
+font-size: 14px;
+}
+
+.chat-footer button {
+background: #6a2e35;
+color: white;
+border: none;
+padding: 10px 14px;
+cursor: pointer;
+}
+
+.exercise-options button {
+margin: 4px;
+padding: 8px 10px;
+border: none;
+border-radius: 6px;
+background: #6a2e35;
+color: white;
+cursor: pointer;
+font-size: 14px;
+}
+
+.chat-body img {
+width: 100%;
+border-radius: 8px;
+margin-top: 8px;
+}
