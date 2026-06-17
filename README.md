@@ -1,7 +1,7 @@
 # PhysioLive: An IoT-Based Physiotherapy Monitoring System
 
 ## Overview
-PhysioLive is a Real-Time Physiotherapy Monitoring Platform that integrates IoT sensors, live telemetry streaming, and interactive analytics to track patient rehabilitation exercises. The system enables therapists to monitor movement data, generate reports, and detect abnormal motion patterns during therapy sessions.
+PhysioLive is a Real-Time Physiotherapy Monitoring Platform that integrates IoT sensors, live telemetry streaming, and interactive analytics to track patient rehabilitation exercises. The system enables therapists to monitor movement data, generate reports, and detect abnormal motion patterns during therapy sessions. 
 
 ## Key Features
 - Real-Time Patient Monitoring
